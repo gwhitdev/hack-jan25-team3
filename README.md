@@ -53,7 +53,7 @@ The website must aim to raise awareness about human trafficking and modern slave
 It should focus primarily on human trafficking as the central issue.
 
 2. User Safety
-Include a "To Safety" button that redirects users to a different site and clears the browser history to ensure privacy and safety.
+Include a "To Safety" button that redirects users to a different site and clears the last page in the browser history to ensure privacy and safety.
 The feature must operate seamlessly to prevent detection by unauthorized parties.
 
 3. Reporting Features
@@ -505,6 +505,7 @@ These features aim to create a robust support network and ensure that victims ha
 | Sarah Darlington | [Github](https://github.com/Sazzzel) | [LinkedIn](https://www.linkedin.com/in/sarah-darlington-dev/) |
 | Mikael Johnsson | [Github](https://github.com/mikael-johnsson) | [LinkedIn](https://www.linkedin.com/in/mikael-johnsson/) |
 | Maarten Ridder | [Github](https://github.com/MJRidder) | [LinkedIn](https://www.linkedin.com/in/maartenridder1/) |
-| Gareth | [Github](https://github.com/MJRidder) | [LinkedIn](https://www.linkedin.com/in/maartenridder1/) |
+| Gareth Whitley | [Github](https://github.com/MJRidder) | [LinkedIn](https://www.linkedin.com/in/maartenridder1/) |
+| William Waldron-Hyden | [Github](https://github.com/Will-WHyd) | [LinkedIn](https://www.linkedin.com/in/william-waldron-hyden/) |
 
 [Back to Table of Contents](#table-of-contents)
