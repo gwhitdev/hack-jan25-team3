@@ -1,10 +1,10 @@
+![HAVEN Readme](readmedocs/havenreadmesun.webp)
 ## HAVEN - (Humanitarian Action for Vigilance Empowerment and Notification)
 
-[View live project here](https://mikael-johnsson.github.io/hack-jan25-team3)
+![screenshot of Home page](readmedocs/responsive.png)
 
-<br>
 
-![screenshot of Home page]()
+[View our live project](https://mikael-johnsson.github.io/hack-jan25-team3)
 
 ---
 
@@ -42,6 +42,7 @@
   * [CSS Validation using W3C Validation](#css-validation-using-w3c-validation)
   * [Lighthouse scores via Chrome Developer Tools](#lighthouse-scores-via-chrome-developer-tools)
 * [Credits](#credits) 
+* [Team](#team)
 
 ---
 
@@ -267,7 +268,7 @@ Our primary goal is to create a safe, accessible, and educational resource that 
 
   # Colour Scheme
 
-  [colours]()
+  ![colours](readmedocs/colours.png)
 
   # Typography
 
@@ -283,23 +284,72 @@ Our primary goal is to create a safe, accessible, and educational resource that 
 
 ### Navbar
  
+ ![Navbar](readmedocs/nav.png)
 
 ### Hero Image
 
+ ![colours](readmedocs/background.webp)
+
 ### Footer
 
+ ![Footer](readmedocs/footer.png)
 
 
-### Safety Button
+
+### To Safety Button
 Our website includes a floating "To Safety" button designed to protect users in potentially dangerous situations. When clicked, the user is redirected to a different website, and their browsing history is cleared. This ensures that no one can trace their visit to our website.
 
 ### Reporting Form
 To assist individuals who have been taken or are being held against their will—or anyone who has encountered someone in need of help—we have provided a report form. This form includes:
-- A description box for detailed information.
-- The option to upload photos or videos as evidence.
-- Integration with the [What3Words API](https://what3words.com/pretty.needed.chill) to allow users to share their location precisely (within a 3m x 3m area).
 
-Users can also indicate whether they are comfortable being contacted for additional information. This feature ensures that users can remain anonymous if they prefer.
+1. **Description Box**:
+- There is a large text box where you can type in detailed information about what is happening. For example, you can describe the situation or share any important observations.
+
+2. **Using the Map to Add a Location**:
+- The map starts with a marker placed in **Dublin** by default.
+- There’s a button that lets you set the marker to your current location. To use this, you will need to allow your browser to access your location. The marker will then move to where you are.
+  - You can also drag the marker on the map to place it exactly where the event is happening.
+- The coordinates are saved and are automatically included when you submit the form.
+
+3. **Contact Preferences**:
+- You can choose whether or not you want to be contacted after submitting the form. If you prefer to stay anonymous, you can. This allows you to share information in the way that feels safest for you.
+
+4. **How to Use It**:
+- Start by typing the details of the situation in the description box.
+- Then, use the map to add a location by either clicking the button to set your current location or dragging the marker to the right spot.
+- Submit the form containing the information you provided, including the location
+- Choose whether you want to be contacted or not.
+- If you do fill out the Contact details and submit the your details.
+
+<details open>
+<summary>Report Form - Report incident </summary>  
+
+![Report Form - Report incident](readmedocs/page1.png)
+</details> 
+
+<details>
+<summary>Report Form - Location </summary>  
+
+![Report Form - Location](readmedocs/page2.png)
+</details> 
+
+<details>
+<summary>Report Form - Information to be submitted </summary>  
+
+![Report Form - Information to be submitted](readmedocs/page3.png)
+</details> 
+
+<details>
+<summary>Report Form - Can we contact you? </summary>  
+
+![Report Form - Can we contact you?](readmedocs/page4.png)
+</details> 
+
+<details>
+<summary>Report Form - Contact Information </summary>  
+
+![Report Form - Contact Information](readmedocs/page5.png)
+</details> 
 
 ### Desktop View
 
@@ -362,12 +412,6 @@ Human trafficking remains a pervasive global issue, affecting millions of people
 
 ---
 
-# Submission
-
-[Back to Table of Contents](#table-of-contents)
-
----
-
 # Deployment
 
 GitHub was used to deploy the website. These were the steps taken to acheive this:
@@ -387,18 +431,45 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 
 ---
 
-## Future Features
+## Future Features  
+
+As the platform evolves, we aim to introduce additional features to enhance its functionality and expand its impact.  
+
+### 1. **Safe Place Registration Form**  
+We plan to develop a dedicated form where organizations can register themselves as designated safe spaces for victims of human trafficking. This form will include:  
+- Basic organizational details such as name, address, and contact information.  
+- Descriptions of the services offered (e.g., shelter, legal aid, counseling).  
+- Verification steps to ensure the authenticity and reliability of listed organizations.  
+
+### 2. **Safe Places Directory Page**  
+A dynamic page will be created to display a directory of registered safe places. This page will include:  
+- **Search by Location**: Users will be able to search for safe spaces near them using a location-based filter.  
+- **Map Integration**: A visual map with pins representing the locations of registered organizations.  
+- **Detailed Information**: Each organization listing will include a brief overview, contact details, and available services.  
+- **User Feedback**: Option for users to provide feedback or reviews on listed safe spaces to maintain accountability.  
+
+### 3. **Enhanced User Support**  
+- Integration of location-based services to provide users with real-time suggestions for nearby safe places.  
+- Collaboration tools for organizations to communicate and coordinate with one another directly through the platform.  
+
+These features aim to create a robust support network and ensure that victims have easy access to trusted resources when they need them most.  
+
  
  [Back to Table of Contents](#table-of-contents)
 
 ---
 
-# Technologies Used
+# Tech Stack
 
 ## Languages Used 
+- HTML
+- CSS
+- JavaScript
 
 ## Frameworks, Libraries, Technologies & Programs Used
-
+- Bootstrap
+- NodeJS
+- ExpressJS
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -418,13 +489,15 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 
 ---
 
-## **🌟 Credits** 
+# **🌟 Credits** 
 
 [Back to Table of Contents](#table-of-contents)
 
 ---
  
-### Contributors
+# Team
+
+## 404 Freedom Not Found
 
 | Name | Github | LinkedIn |
 | --- | --- | --- |
