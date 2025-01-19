@@ -3,11 +3,17 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
     background-color: #1C191F;
     color: #FEFDF9;
+}
+
+main {
+    flex: 1;
 }
 
 /* Header */
@@ -16,9 +22,10 @@ header {
     padding: 20px;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     top: 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 header a {
@@ -49,8 +56,17 @@ header a {
     font-size: xx-large;
 }
 
+.logo-container {
+    display: inline-block;
+}
+
+header .logo-container h1 {
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
 nav {
-    position: absolute;
+    position: relative;
     background-color: #FEFDF9;
     color: #1C191F;
     top: 100%;
@@ -97,6 +113,19 @@ nav {
     border-radius: 12px;
 }
 
+.info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #FEFDF9;
+    box-shadow: 0 2px 2px #3a3a3a;
+    max-width: 60vw;
+}
+
 /* Map */
 #map {
     height: 300px;
@@ -109,9 +138,9 @@ footer {
     padding: 20px 0;
     width: 100%;
     text-align: center;
-    position: absolute;
     bottom: 0;
     justify-content: space-between;
+    
 }
 
 footer ul {
@@ -121,6 +150,7 @@ footer ul {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    
 }
 
 
@@ -139,7 +169,8 @@ body {
     background-image: url('../images/background.webp');
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 100vh;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
