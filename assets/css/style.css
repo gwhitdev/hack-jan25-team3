@@ -141,13 +141,14 @@ nav {
 #safety-notmobile {
     display: none;
 }
+
 #safety-mobile {
     background-color:rgba(28,25,31,0.8);
     border-radius: 100%;
     border: 5px solid rgba(0,0,0,0.5);
     width: 110px;
     height: 110px;
-    position: absolute;
+    position: fixed;
     bottom: 10%;
     right: 10%;
     display: flex;
