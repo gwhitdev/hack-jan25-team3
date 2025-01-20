@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+/* global bootstrap */
 // Modal elements
 const formModal = document.getElementById("reportModal"); //Entire Modal for targeting
 const bootstrapModal = new bootstrap.Modal(formModal); // Bootstrap Modal
