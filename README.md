@@ -477,19 +477,52 @@ These features aim to create a robust support network and ensure that victims ha
 
 # Testing
 
-### HTML Validation
+## HTML Validation
 
-### CSS Validation
+### index.html
 
-### JS Validation
+![index.html validation](readmedocs/index.png)
 
-### Lighthouse 
+### haven.html
+
+![haven.html validation](readmedocs/haven.png)
+
+### resources.html
+
+![resources.html validation](readmedocs/resources.png)
+
+### contact.html
+
+![contact.html validation](readmedocs/contact.png)
+
+## CSS Validation
+
+![style.css validation](readmedocs/css.png)
+
+## JS Validation
+
+### script.js
+
+![script.js validation](readmedocs/script.png)
+
+- one unused variable error 
+  - This is used and is called in a separate file.
+
+### escape.js
+
+![escape.js validation](readmedocs/escapejs.png)
+
+## Lighthouse 
 
 [Back to Table of Contents](#table-of-contents)
 
 ---
 
 # **🌟 Credits** 
+
+- ChatGPT for genarating images for the site.
+
+
 
 [Back to Table of Contents](#table-of-contents)
 

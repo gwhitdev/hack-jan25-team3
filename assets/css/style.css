@@ -163,11 +163,11 @@ nav {
   background-color: rgb(247, 122, 20);
   padding: 10px 20px;
   border-radius: 12px;
-
-  &:hover {
+}
+  #nav-report-button :hover {
     background-color: white
   }
-}
+
 
 #safety-notmobile {
   display: none;
@@ -486,17 +486,17 @@ body {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
-
-  &:hover {
+}
+  .report-button :hover {
     background-color: rgb(247, 122, 20);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
-  &:active {
+  .report-button :active {
     background-color: rgb(247, 122, 20);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   }
-}
+
 
 
 /* Media queries */
