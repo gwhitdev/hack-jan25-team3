@@ -374,6 +374,17 @@ a:hover {
   color: blue;
 }
 
+.article-content > span {
+  text-align: center
+}
+
+#resources-image {
+  height: 400px;
+  width: auto;
+  margin: auto;
+  border-radius: 12px;
+}
+
 /* Contact page */
 #contact {
   display: flex;
