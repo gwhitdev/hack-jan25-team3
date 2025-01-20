@@ -136,10 +136,7 @@ nav {
   margin-right: 0;
 }
 
-#menu .active a {
-  text-decoration: underline !important;
-  text-decoration-color: #1C191F;
-}
+
 
 #nav-mobile-toggle:checked~nav {
   display: block;
@@ -156,9 +153,7 @@ nav {
 }
 
 .active {
-    border-bottom: 1px solid;
-    color: #3DA6FF !important; 
-    text-decoration: underline; 
+    border-bottom: 2px white solid; 
     font-weight: bold; 
 }
 
@@ -433,6 +428,11 @@ a:hover {
 #contact-form {
   min-width: 200px;
   max-width: 320px;
+}
+
+
+.resource-image {
+  max-width: 80vw;
 }
 
 /* Footer */
