@@ -233,6 +233,10 @@ Our primary goal is to create a safe, accessible, and educational resource that 
 
 ---
 
+### Projectboard
+![Projectboard](readmedocs/projectboard.png)
+
+
 # Wireframes
 
 <details open>
@@ -284,7 +288,7 @@ Our primary goal is to create a safe, accessible, and educational resource that 
 
 ### Navbar
  
- ![Navbar](readmedocs/nav.png)
+ ![Navbar](readmedocs/navbar.png)
 
 ### Hero Image
 
@@ -351,14 +355,21 @@ To assist individuals who have been taken or are being held against their willâ€
 ![Report Form - Contact Information](readmedocs/page5.png)
 </details> 
 
+### Database 
+- The database for this iste is hosted [here](https://github.com/gwhitdev/haven-app-database-crud)
+
 ### Desktop View
 
+![Desktop](readmedocs/desktop.png)
 
 ### Tablet View
+
+![Tablet](readmedocs/tablet.png)
 
 
 ### Mobile View
 
+![mobile](readmedocs/mobile.png)
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -521,6 +532,9 @@ These features aim to create a robust support network and ensure that victims ha
 # **ðŸŒŸ Credits** 
 
 - ChatGPT for genarating images for the site.
+- Code Institute - Nav inspired from Lve Running project.
+- [eurostat](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Trafficking_in_human_beings_statistics) for the graphs 
+
 
 
 
