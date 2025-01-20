@@ -132,6 +132,7 @@ function clearModal() {
   reporterForm.classList.add("d-none");
 
   //Reset the modal button
+  modalButton.classList.remove("d-none");
   modalButton.textContent = "Continue";
   modalButton.removeAttribute("disabled");
 
@@ -252,7 +253,7 @@ async function initMap() {
   if (marker) {
     google.maps.event.clearListeners(marker, "dragend");
   }
-  
+
   incidentLocation = initPosition;
   marker.addListener("dragend", (e) => {
     incidentLocation = { lat: e.latLng.lat(), lng: e.latLng.lng() };
