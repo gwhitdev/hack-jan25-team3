@@ -331,21 +331,52 @@ p {
 
 /* Resources page */
 .resources-main {
-    max-width: 800px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
-    
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow-x: hidden; 
 }
 
 .resources-page-header {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: center; 
+  margin-bottom: 30px; 
 }
 
-
 .resources-content {
-  width: 100%;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.article {
+  padding: 20px; 
+  border-radius: 6px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+  text-align: left; 
+}
+
+.article-header {
+  margin-bottom: 15px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto; 
+  display: block; 
+  margin: 15px auto; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  object-fit: contain; 
+}
+
+article hr {
+  margin: 20px 0; 
+  border: none; 
+  border-top: 1px solid #e0e0e0; 
+  width: 100%; 
 }
 
 .contact-main {
@@ -577,6 +608,8 @@ body {
     padding: 5px 5px;
     font-size: 100%;
   }
+
+  
 
   #contact {
     position: relative;
