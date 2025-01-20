@@ -1,20 +1,21 @@
 /* General styles */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
 }
 
-main { 
-    /* min-height: 90vh; */
-    flex: 1;
-    margin-top: 76px;
-    padding: 1rem;
-    margin: 1.5rem;
+main {
+  flex: 1;
+  margin: 1.5rem;
+  margin-top: 90px;
+  padding: 1rem;
+
 }
 
 header,
@@ -23,17 +24,16 @@ footer {
   color: #fefdf9;
 }
 
-
 /* Header */
 header {
-    display: flex;
-    padding: 20px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 header a {
@@ -45,30 +45,49 @@ header a {
   letter-spacing: 2px;
   font-size: 110%;
   padding-top: 10px;
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+    margin: 0;
 }
 
-#menu > li {
+#menu>li {
   margin-bottom: 0.5em;
   list-style-type: none;
   text-align: right;
+
+}
+
+#menu>li>a:hover {
+  color: rgb(247, 122, 20);
 }
 
 .logo {
   color: #fefdf9;
   margin: 0;
+  text-align: center;
+}
+
+.logo-container {
+  background-image: url('../images/faviconhackathon_1.webp');
+  background-size: cover;
+  background-position: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 0.5rem;
 }
 
 #hamburger-icon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Front page image  */
 
 .index-body {
-    background-image: url('../images/background.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; 
+  background-image: url('../images/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-container h1 {
@@ -78,12 +97,12 @@ header a {
 }
 
 .hero-container {
-    /* background-color: rgba(128, 128, 128, 0.5); */
-    height: 60vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* background-color: rgba(128, 128, 128, 0.5); */
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Navigation & toggles - Mobile first  */
@@ -93,30 +112,33 @@ header a {
 }
 
 .logo-container {
-    display: inline-block;
+  display: inline-block;
 }
 
 header .logo-container h1 {
-    margin: 0; 
-    padding: 0; 
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
 }
 
 nav {
-    position: absolute;
-    display: none;
-    right: 0;
-    top: 76px;
-    background-color: #FEFDF9;
-    color: #1C191F;
-    box-shadow: 0 2px 2px #3a3a3a;
-    list-style-type: none;
-    padding-right: 10px;
-    z-index: 1;
-    width: 200px;
-    margin-right: 0;
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 76px;
+  background-color: #FEFDF9;
+  color: #1C191F;
+  box-shadow: 0 2px 2px #3a3a3a;
+  list-style-type: none;
+  padding-right: 10px;
+  z-index: 1;
+  width: 200px;
+  margin-right: 0;
 }
 
-#nav-mobile-toggle:checked ~ nav {
+
+
+#nav-mobile-toggle:checked~nav {
   display: block;
 }
 
@@ -130,56 +152,67 @@ nav {
   padding-left: 1rem;
 }
 
+.active {
+    border-bottom: 2px white solid; 
+    font-weight: bold; 
+}
+
 #nav-report-button {
-    font-weight: bold;
-    color: #000000;
-    background-color: rgb(247, 122, 20);
-    padding: 10px 20px;
-    border-radius: 12px;
+  font-weight: bold;
+  color: #000000;
+  background-color: rgb(247, 122, 20);
+  padding: 10px 20px;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: white
+  }
 }
 
 #safety-notmobile {
-    display: none;
+  display: none;
 }
 
 #safety-mobile {
-    background-color:rgba(28,25,31,0.8);
-    border-radius: 100%;
-    border: 5px solid rgba(0,0,0,0.5);
-    width: 110px;
-    height: 110px;
-    position: fixed;
-    bottom: 10%;
-    right: 10%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 4px 50px black;
-    z-index: 100;
+  background-color: rgba(28, 25, 31, 0.8);
+  border-radius: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  width: 110px;
+  height: 110px;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 50px black;
+  z-index: 100;
 }
 
 #safety-mobile a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+
+  font-weight: bold;
 }
+
 .fa-person-walking-dashed-line-arrow-right {
-    color: rgb(221, 255, 0);
-    font-size: 2rem;
-    padding-top: 0.25rem;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding-top: 0.25rem;
 }
+
 .info-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    background-color: #FEFDF9;
-    box-shadow: 0 2px 2px #3a3a3a;
-    max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #FEFDF9;
+  box-shadow: 0 2px 2px #3a3a3a;
+  max-width: 90vw;
 }
 
 /* Map */
@@ -199,9 +232,9 @@ nav {
 
 /* Page 3 report form */
 #confirmDescription {
-    margin-bottom: 8px;
-    border-bottom: 1px solid #ccc; 
-    padding-bottom: 10px; 
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
 }
 
 #confirmLocation {
@@ -234,7 +267,7 @@ fieldset {
   border-radius: 8px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Style input fields */
@@ -288,11 +321,11 @@ legend {
 
 /* HAVEN page */
 .haven-main {
-    padding: 20px;
-    max-width: 900px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  max-width: 900px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .haven-page-header {
@@ -301,10 +334,10 @@ legend {
 }
 
 .h1-page-header {
-    margin-bottom: 15px;
-    padding: 1em;
-    font-size: 2rem;
-    margin: auto;
+  margin-bottom: 15px;
+  padding: 1em;
+  font-size: 2rem;
+  margin: auto;
 }
 
 .haven-context {
@@ -318,30 +351,23 @@ p {
 
 /* Resources page */
 .resources-main {
-    max-width: 800px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .resources-page-header {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: center; 
+  margin-bottom: 30px; 
 }
-
 
 .resources-content {
   width: 100%;
 }
 
-.contact-main {
-    max-width: 800px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    
-}
+
 
 .article {
   background-color: #fff;
@@ -349,7 +375,7 @@ p {
   border-radius: 8px;
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .article-header {
@@ -391,23 +417,23 @@ a:hover {
   border: 2px solid #3a3a3a;
   border-radius: 25px;
 }
+
 .contact-main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 900px;
-  min-height: auto;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 #contact-form {
-    min-width: 200px;
-    max-width: 320px;
-    }
+  min-width: 200px;
+  max-width: 320px;
+}
+
+
+.resource-image {
+  max-width: 80vw;
+}
 
 /* Footer */
 
@@ -418,12 +444,12 @@ a:hover {
 }
 
 footer {
-    position: relative;
-    padding: 20px 0;
-    width: 100%;
-    text-align: center;
-    justify-content: space-between;
-    
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+
 }
 
 footer ul {
@@ -443,29 +469,30 @@ footer a {
 
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-height: 80vh;
-    background: radial-gradient(circle, white 50%, #a9a9a9);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 80vh;
+  background: radial-gradient(circle, white 50%, #a9a9a9);
 }
 
 .report-button {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    &:hover {
-        background-color:  rgb(247, 122, 20);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
 
-    &:active {
-        background-color:  rgb(247, 122, 20);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-    }
+  &:hover {
+    background-color: rgb(247, 122, 20);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  &:active {
+    background-color: rgb(247, 122, 20);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  }
 }
 
 
@@ -477,8 +504,7 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) {
-}
+@media screen and (min-width: 992px) {}
 
 @media screen and (min-width: 768px) {
   nav {
@@ -494,30 +520,49 @@ body {
     width: 100%;
   }
 
-    nav {
-        display: block;
-        position: absolute;
-        top: auto;
-        right: auto;
-        background-color: #1C191F;
-        color: #FEFDF9;
-        position: relative;
-        box-shadow: none;
-        font-size: 80%;
-        padding: 0;
-        margin-right: 0;
-        width: 100%;
-    }
+  nav {
+    display: block;
+    position: absolute;
+    top: auto;
+    right: auto;
+    background-color: #1C191F;
+    color: #FEFDF9;
+    position: relative;
+    box-shadow: none;
+    font-size: 80%;
+    padding: 0;
+    margin-right: 0;
+    width: 100%;
+  }
 
   .nav-mobile-toggle-label {
     display: none;
   }
+
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
 
   #menu {
     display: flex;
     margin: 5px 0;
     justify-content: end;
   }
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 
   .logo {
     margin: 0;
@@ -530,14 +575,28 @@ body {
     border-color: #fefdf9;
     align-self: center;
   }
+    header li {
+        margin: 0 5px;
+        padding-right: 5px;
+        border-right: 2px solid;
+        border-color: #1C191F;
+        align-self: center;
+    }
+
+  .end-li-item {
+    border-right: none;
+  }
 
   .burger-container {
     display: none;
   }
+
   #nav-report-button {
     padding: 5px 5px;
     font-size: 100%;
   }
+
+  
 
   #contact {
     position: relative;
@@ -561,43 +620,42 @@ body {
 
   #nav-safety-button {
     font-weight: bold;
-    color: #ff0000;
-    background-color: rgb(221, 255, 0);
+    color: #000000;
+    background-color: rgb(247, 122, 20);
     border-radius: 12px;
     display: inherit;
-    padding: 5px 5px;
+    padding: 0.6rem;
     font-size: 100%;
   }
 
-    #safety-mobile {
-      display: none;
-    }
+  #safety-mobile {
+    display: none;
+  }
 
-    #safety-notmobile {
-        display: block;
-    }
+  #safety-notmobile {
+    display: block;
+  }
 
-    #nav-safety-button {
-        font-weight: bold;
-        color: #ff2600;
-        background-color: rgb(221, 255, 0);
-        padding: 10px 20px;
-        border-radius: 12px;
-    }
-    main {
-        margin-top: 100px;
-    }
+  main {
+    margin-top: 140px;
+  }
+
+  .info-card {
+    max-width: 60vw;
+  }
 
 }
 
 @media screen and (min-width: 576px) {
   fieldset {
-    width: 90%; /* Adjust for smaller screens */
+    width: 90%;
+    /* Adjust for smaller screens */
   }
 
 }
 
 @media screen and (min-width: 376px) {
+
   /* Report form */
   #descriptionLabel {
     width: 100%;
