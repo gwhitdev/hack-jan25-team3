@@ -27,14 +27,21 @@ body {
     background: radial-gradient(circle, white 50%, #a9a9a9);
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
-    display: flex;
-    padding: 20px;
+    background-color: #1C191F;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 99;
     width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
     justify-content: space-between;
-    position: relative;
-    top: 0;
+    align-items: baseline;
 }
 
 header a {
@@ -43,17 +50,44 @@ header a {
 }
 
 #menu {
-    letter-spacing: 2px;
     font-size: 110%;
-    padding-top: 10px;
+    letter-spacing: 4px;
+    list-style-type: none;
+    margin: 0;
 }
 
 #menu>li {
-    margin-bottom: .5em;
-    list-style-type: none;
-    text-align: right;
+    margin-bottom: 1em;
 }
 
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #1C191F;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 .logo {
     color: #FEFDF9;
     margin: 0;
@@ -83,17 +117,13 @@ header a {
     font-size: xx-large;
 }
 
-nav {
-    position: absolute;
-    display: none;
-    background-color: #FEFDF9;
-    color: #1C191F;
-    box-shadow: 0 2px 2px #3a3a3a;
-    list-style-type: none;
-    padding-right: 10px;
-    z-index: 1;
-    width: 200px;
-    margin-right: 0;
+.navbar {
+    padding: 0;
+    
+}
+
+#navbarText {
+    line-height: 20px;
 }
 
 #nav-mobile-toggle:checked~nav {
@@ -112,6 +142,9 @@ nav {
 
 .active {
     border-bottom: 1px solid;
+    color: #3DA6FF !important; 
+    text-decoration: underline; 
+    font-weight: bold; 
 }
 
 #nav-report-button {
@@ -450,30 +483,22 @@ footer a {
 
     nav {
         display: block;
-        position: absolute;
-        background-color: #1C191F;
-        color: #FEFDF9;
         position: relative;
         box-shadow: none;
-        font-size: 80%;
-        padding: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-
-    .nav-mobile-toggle {
-        display: block;
-    }
-
-    .nav-mobile-toggle-label {
-        display: none;
+        width: fit-content;
+        padding-right: 1rem;
     }
 
     #menu {
         display: flex;
-        margin: 5px, 0;
-        justify-content: end;
+    }
 
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
     }
 
     .logo {
@@ -484,7 +509,7 @@ footer a {
         margin: 0 5px;
         padding-right: 5px;
         border-right: 2px solid;
-        border-color: #FEFDF9;
+        border-color: #1C191F;
         align-self: center;
     }
 
