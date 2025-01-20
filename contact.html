@@ -1,307 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
     <link rel="manifest" href="assets/images/site.webmanifest" />
     <title>HAVEN</title>
 
     <!-- Bootstrap CSS -->
     <!-- Bootswatch CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css"
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- What3Words -->
-    <script
-      type="module"
-      defer
-      src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.esm.js"
-    ></script>
-    <script
-      nomodule
-      defer
-      src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.js"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/685977a0ed.js"
-      crossorigin="anonymous"
-    ></script>
+    <script type="module" defer
+        src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.esm.js"></script>
+    <script nomodule defer
+        src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.js"></script>
+    <script src="https://kit.fontawesome.com/685977a0ed.js" crossorigin="anonymous"></script>
     <!--Fontawesome link-->
-  </head>
+</head>
 
 
 <body class="index-body">
     <!-- Header -->
     <header>
-      <div class="container nav-container">
-          <div class="row align-items-center">
-              <div class="col-6 col-md-4 col-lg-4 d-flex align-items-center">
-                      <div class="col-6 logo-container"></div>
-                      <div class="col-6">
-                        <a href="index.html" ><h1 class="logo">Haven</h1></a>
-                  </div>
-              </div>
+        <div class="container nav-container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-3 col-lg-2 d-flex align-items-center">
+                    <div class="col-6 logo-container"></div>
+                    <div class="col-6">
+                        <a href="index.html">
+                            <h1 class="logo">Haven</h1>
+                        </a>
+                    </div>
+                </div>
 
-              <!-- Navbar here -->
-              <div class="col-2 col-md-8 offset-4 offset-md-0 ">
-                  <input type="checkbox" id="nav-mobile-toggle" name="nav-mobile-toggle">
-                  <nav>
-                      <ul id="menu">
-                          <li>
-                              <a href="index.html" >Home</a>
-                          </li>
-                          <li>
-                              <a href="#" id="nav-report-button" data-bs-toggle="modal"
-                                  data-bs-target="#reportModal">Report</a>
-                          </li>
-                          <li>
-                              <a href="haven.html">Haven</a>
-                          </li>
-                          <li>
-                              <a href="resources.html">Resources</a>
-                          </li>
-                          <li class="active end-li-item">
-                              <a href="contact.html">Contact</a>
-                          </li>
-                          <li class="end-li-item" id="safety-notmobile">
-                              <a href="#" id="nav-safety-button"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i></a>
-                          </li>
-                      </ul>
-                  </nav>
-                  <label for="nav-mobile-toggle" class="nav-mobile-toggle burger-container">
-                      <i class="fa-solid fa-bars" aria-hidden="true"></i>
-                  </label>
-              </div>
-          </div>
-      </div>
-  </header>
-  
-    <button id="safety-mobile"
-            alt="Escape to BBC Weather - doesn't hide all your browser history!"
-            aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it.">
+                <!-- Navbar here -->
+                <div class="col-2 col-md-8 offset-4 offset-md-0 offset-lg-2 ">
+                    <input type="checkbox" id="nav-mobile-toggle" name="nav-mobile-toggle">
+                    <nav>
+                        <ul id="menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" id="nav-report-button" data-bs-toggle="modal"
+                                    data-bs-target="#reportModal">Report</a>
+                            </li>
+                            <li>
+                                <a href="haven.html">Haven</a>
+                            </li>
+                            <li>
+                                <a href="resources.html">Resources</a>
+                            </li>
+                            <li class="active end-li-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li class="end-li-item" id="safety-notmobile">
+                                <a href="#" id="nav-safety-button"><i
+                                        class="fa-solid fa-person-walking-dashed-line-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <label for="nav-mobile-toggle" class="nav-mobile-toggle burger-container">
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <button id="safety-mobile" alt="Escape to BBC Weather - doesn't hide all your browser history!"
+        aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it.">
         <a href="" id="nav-safety-button-mobile">Quick exit</a>
         <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
     </button>
 
     <main class="contact-main container">
-            <div class="row">
+        <div class="row justify-content-center">
 
-                <div class="col-8 mx-auto">
-                    <div class="contact-header text-center">
-                        <h1 class="page-header h1-page-header">Contact us</h1>
-                        <p class="page-context">
+            <div class="col-12 mx-auto">
+                <div class="contact-header text-center">
+                    <h1 class="page-header h1-page-header">Contact us</h1>
+                    <p class="page-context">
 
-                            Please get in touch if we can help you in any way by either sending us an email on
-                            hacathontestemail@gmail.com, or filling in the below form. We will get back to you as soon
-                            as possible.
-                        </p>
-                    </div>
-                    <div id="contact">
-                        <form method="GET" action="MAILTO:hacathontestemail@gmail.com" id="contact-form">
-                            <!--Need something for this form to be send to-->
-                            <h2>Get in Touch</h2>
+                        Please get in touch if we can help you in any way by either sending us an email on
+                        hacathontestemail@gmail.com, or filling in the below form. We will get back to you as soon
+                        as possible.
+                    </p>
+                </div>
+                <div id="contact" class="col-10 mx-auto">
+                    <form method="GET" action="MAILTO:hacathontestemail@gmail.com" id="contact-form">
+                        <!--Need something for this form to be send to-->
+                        <h2>Get in Touch</h2>
 
-                            <label class="bold" for="first-name">First name</label>
-                            <input type="text" id="first-name" class="text-input" name="first-name" required>
-                            <br>
-                            <label class="bold" for="last-name">Last name</label>
-                            <input type="text" id="last-name" class="text-input" name="last-name" required>
-                            <br>
-                            <label class="bold" for="email-address">Email address</label>
-                            <input type="text" id="email-address" class="text-input" name="email-address" required>
-                            <br>
-                            <label class="bold" for="phone">Phone number</label>
-                            <input type="text" id="phone" class="text-input" name="phone-number">
-                            <br>
-                            <br>
-                            <p class="bold">What is your request about?</p>
-                            <br>
-                            <div class="radio-buttons">
-                                <div>
-                                    <input type="radio" id="report-incident" value="report-incident"
-                                        class="contact-type" name="contact-type">
-                                    <label for="report-incident">Report an incident</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="information" value="information" class="contact-type"
-                                        name="contact-type">
-                                    <label for="Information">General information</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="collaborate" value="collaborate" class="contact-type"
-                                        name="contact-type">
-                                    <label for="collaborate">Collaborate with HAVEN</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="general" value="general-contact" class="contact-type"
-                                        name="contact-type">
-                                    <label for="general">General contact</label>
-                                </div>
-                            </div>
-                            <br>
+                        <label class="bold" for="first-name">First name</label>
+                        <input type="text" id="first-name" class="text-input" name="first-name" required>
+                        <br>
+                        <label class="bold" for="last-name">Last name</label>
+                        <input type="text" id="last-name" class="text-input" name="last-name" required>
+                        <br>
+                        <label class="bold" for="email-address">Email address</label>
+                        <input type="text" id="email-address" class="text-input" name="email-address" required>
+                        <br>
+                        <label class="bold" for="phone">Phone number</label>
+                        <input type="text" id="phone" class="text-input" name="phone-number">
+                        <br>
+                        <br>
+                        <p class="bold">What is your request about?</p>
+                        <br>
+                        <div class="radio-buttons">
                             <div>
-                                <label class="bold" for="free-text">Please add your request below</label>
-                                <br>
-                                <textarea name="free-text" id="free-text" rows="4" cols="30"
-                                    placeholder="Let us know how we can assist you." required></textarea>
+                                <input type="radio" id="report-incident" value="report-incident" class="contact-type"
+                                    name="contact-type">
+                                <label for="report-incident">Report an incident</label>
                             </div>
-                            <button type="submit" class="get-in-touch-button">Send request</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        <!-- Modal -->
-      <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Report incident</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="" method="post" enctype="multipart/form-data" id="reportForm">
-                        <div id="pageOne" class="page">
-                            <label for="incidentDescription" id="descriptionLabel">Describe what happened</label>
-                            <textarea name="incidentDescription" id="incidentDescription" rows="10"
-                                cols="40"></textarea>
+                            <div>
+                                <input type="radio" id="information" value="information" class="contact-type"
+                                    name="contact-type">
+                                <label for="Information">General information</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="collaborate" value="collaborate" class="contact-type"
+                                    name="contact-type">
+                                <label for="collaborate">Collaborate with HAVEN</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="general" value="general-contact" class="contact-type"
+                                    name="contact-type">
+                                <label for="general">General contact</label>
+                            </div>
                         </div>
-                        <div id="pageTwo" class="page d-none">
-                            <div id="map"></div>
+                        <br>
+                        <div>
+                            <label class="bold" for="free-text">Please add your request below</label>
+                            <br>
+                            <textarea name="free-text" id="free-text" rows="4" cols="30"
+                                placeholder="Let us know how we can assist you." required></textarea>
                         </div>
-                        <div id="pageThree" class="page d-none">
-                            <h6>Information to be submitted:</h6>
-                            <p class="bold">Incident description:</p>
-                            <p id="confirmDescription">confirmation placeholder p</p>
-                            <p class="bold">Location of incident:</p>
-                            <p id="confirmLocation">location placeholder</p>
-                        </div>
+                        <button type="submit" class="get-in-touch-button">Send request</button>
                     </form>
-                    <form action="" method="post" id="reporterForm" class="d-none">
-                        <div id="pageFour" class="page d-none">
-                            <h6>Thank you for submitting your report.</h6>
-                            <p>
-                                To receive confirmation from our team regarding your report,
-                                please select “Yes” and complete the form. If you prefer to
-                                remain anonymous and receive no form of correspondence,
-                                select "No." Thank you.
-                            </p>
-                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
-                                No
-                            </button>
-                            <button class="btn btn-success" id="yesBtn">Yes</button>
-                        </div>
-                        <div id="pageFive" class="page d-none">
-                            <label for="firstName">First name</label>
-                            <input type="text" name="firstName" id="firstName" />
-                            <label for="lastName">Last name</label>
-                            <input type="text" name="lastName" id="lastName" />
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                            <label for="phone">Phone</label>
-                            <input type="tel" name="phone" id="phone" />
-                        </div>
-                        <div id="pageSix" class="page d-none">
-                            <h6>Thank you for letting our team reach out.</h6>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Close
-                    </button>
-                    <button type="button" class="btn btn-primary" id="modalButton">
-                        Continue
-                    </button>
                 </div>
             </div>
         </div>
-      </div>
+        <!-- Modal -->
+        <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Report incident</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post" enctype="multipart/form-data" id="reportForm">
+                            <div id="pageOne" class="page">
+                                <label for="incidentDescription" id="descriptionLabel">Describe what happened</label>
+                                <textarea name="incidentDescription" id="incidentDescription" rows="10"
+                                    cols="40"></textarea>
+                            </div>
+                            <div id="pageTwo" class="page d-none">
+                                <div id="map"></div>
+                            </div>
+                            <div id="pageThree" class="page d-none">
+                                <h6>Information to be submitted:</h6>
+                                <p class="bold">Incident description:</p>
+                                <p id="confirmDescription">confirmation placeholder p</p>
+                                <p class="bold">Location of incident:</p>
+                                <p id="confirmLocation">location placeholder</p>
+                            </div>
+                        </form>
+                        <form action="" method="post" id="reporterForm" class="d-none">
+                            <div id="pageFour" class="page d-none">
+                                <h6>Thank you for submitting your report.</h6>
+                                <p>
+                                    To receive confirmation from our team regarding your report,
+                                    please select “Yes” and complete the form. If you prefer to
+                                    remain anonymous and receive no form of correspondence,
+                                    select "No." Thank you.
+                                </p>
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                    No
+                                </button>
+                                <button class="btn btn-success" id="yesBtn">Yes</button>
+                            </div>
+                            <div id="pageFive" class="page d-none">
+                                <label for="firstName">First name</label>
+                                <input type="text" name="firstName" id="firstName" />
+                                <label for="lastName">Last name</label>
+                                <input type="text" name="lastName" id="lastName" />
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" />
+                                <label for="phone">Phone</label>
+                                <input type="tel" name="phone" id="phone" />
+                            </div>
+                            <div id="pageSix" class="page d-none">
+                                <h6>Thank you for letting our team reach out.</h6>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary" id="modalButton">
+                            Continue
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
     <!-- Footer -->
     <footer class="footer-front-page">
-      <span style="font-size:10px"><i class="fa-regular fa-copyright"></i>2025 Haven. All rights
-          reserved.</span>
+        <span style="font-size:10px"><i class="fa-regular fa-copyright"></i>2025 Haven. All rights
+            reserved.</span>
 
-  </footer>
+    </footer>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
     <!-- Escape button JS -->
     <script src="assets/js/escape.js"></script>
     <!-- Map loader -->
     <script>
-      ((g) => {
-        var h,
-          a,
-          k,
-          p = "The Google Maps JavaScript API",
-          c = "google",
-          l = "importLibrary",
-          q = "__ib__",
-          m = document,
-          b = window;
-        b = b[c] || (b[c] = {});
-        var d = b.maps || (b.maps = {}),
-          r = new Set(),
-          e = new URLSearchParams(),
-          u = () =>
-            h ||
-            (h = new Promise(async (f, n) => {
-              await (a = m.createElement("script"));
-              e.set("libraries", [...r] + "");
-              for (k in g)
-                e.set(
-                  k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
-                  g[k]
-                );
-              e.set("callback", c + ".maps." + q);
-              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
-              d[q] = f;
-              a.onerror = () => (h = n(Error(p + " could not load.")));
-              a.nonce = m.querySelector("script[nonce]")?.nonce || "";
-              m.head.append(a);
-            }));
-        d[l]
-          ? console.warn(p + " only loads once. Ignoring:", g)
-          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
-      })({
-        key: "AIzaSyCFMCipQD60N3DxlokjcK-ehosH6wa_ss4",
-        v: "weekly",
-      });
+        ((g) => {
+            var h,
+                a,
+                k,
+                p = "The Google Maps JavaScript API",
+                c = "google",
+                l = "importLibrary",
+                q = "__ib__",
+                m = document,
+                b = window;
+            b = b[c] || (b[c] = {});
+            var d = b.maps || (b.maps = {}),
+                r = new Set(),
+                e = new URLSearchParams(),
+                u = () =>
+                    h ||
+                    (h = new Promise(async (f, n) => {
+                        await (a = m.createElement("script"));
+                        e.set("libraries", [...r] + "");
+                        for (k in g)
+                            e.set(
+                                k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                                g[k]
+                            );
+                        e.set("callback", c + ".maps." + q);
+                        a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                        d[q] = f;
+                        a.onerror = () => (h = n(Error(p + " could not load.")));
+                        a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                        m.head.append(a);
+                    }));
+            d[l]
+                ? console.warn(p + " only loads once. Ignoring:", g)
+                : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+        })({
+            key: "AIzaSyCFMCipQD60N3DxlokjcK-ehosH6wa_ss4",
+            v: "weekly",
+        });
     </script>
-  </body>
+</body>
+
 </html>
