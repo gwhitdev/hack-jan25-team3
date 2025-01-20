@@ -25,16 +25,20 @@
 </head>
 
 <body class="index-body">
+    
     <!-- Header -->
     <header>
         <div class="container nav-container">
             <div class="row align-items-center">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <h1 class="logo">Haven</h1>
+                <div class="col-6 col-md-4 col-lg-4 d-flex align-items-center">
+                        <div class="col-6 logo-container"></div>
+                        <div class="col-6">
+                            <a href="index.html" ><h1 class="logo">Haven</h1></a>
+                    </div>
                 </div>
 
                 <!-- Navbar here -->
-                <div class="col-2 col-md-8 offset-4 offset-md-0 offset-lg-2">
+                <div class="col-2 col-md-8 offset-4 offset-md-0 ">
                     <input type="checkbox" id="nav-mobile-toggle" name="nav-mobile-toggle">
                     <nav>
                         <ul id="menu">
@@ -43,23 +47,22 @@
                             </li>
                             <li>
                                 <a href="#" id="nav-report-button" data-bs-toggle="modal"
-                                   data-bs-target="#reportModal">Report</a>
+                                    data-bs-target="#reportModal">Report</a>
                             </li>
-                            <li>
-                                <a href="haven.html" class="active">Haven</a>
+                            <li class="active">
+                                <a href="haven.html">Haven</a>
                             </li>
                             <li>
                                 <a href="resources.html">Resources</a>
                             </li>
-                            <li>
+                            <li class="end-li-item">
                                 <a href="contact.html">Contact</a>
                             </li>
-                            <li id="safety-notmobile">
-                                <a href="#" id="nav-safety-button">To Safety</a>
+                            <li class="end-li-item" id="safety-notmobile">
+                                <a href="#" id="nav-safety-button"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i></a>
                             </li>
                         </ul>
                     </nav>
-
                     <label for="nav-mobile-toggle" class="nav-mobile-toggle burger-container">
                         <i class="fa-solid fa-bars" aria-hidden="true"></i>
                     </label>
@@ -67,6 +70,7 @@
             </div>
         </div>
     </header>
+
     <button id="safety-mobile"
             alt="Escape to BBC Weather - doesn't hide all your browser history!"
             aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it.">
