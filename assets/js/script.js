@@ -245,7 +245,6 @@ async function initMap() {
 
   if(marker){
     google.maps.event.clearListeners(marker, 'dragend');
-    console.log("cleared listeners");
     }
 
   marker.addListener("dragend", (e) => {

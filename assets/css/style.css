@@ -73,7 +73,7 @@ header a {
 .hero-container h1 {
     padding: 10px;
     margin: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
 
 /* Navigation & toggles - Mobile first  */
