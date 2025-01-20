@@ -534,7 +534,7 @@ These features aim to create a robust support network and ensure that victims ha
 - ChatGPT for genarating images for the site.
 - Code Institute - Nav inspired from Lve Running project.
 - [eurostat](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Trafficking_in_human_beings_statistics) for the graphs 
-- 
+
 
 
 
