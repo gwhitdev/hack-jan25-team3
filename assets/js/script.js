@@ -252,7 +252,8 @@ async function initMap() {
   if (marker) {
     google.maps.event.clearListeners(marker, "dragend");
   }
-
+  
+  incidentLocation = initPosition;
   marker.addListener("dragend", (e) => {
     incidentLocation = { lat: e.latLng.lat(), lng: e.latLng.lng() };
   });
