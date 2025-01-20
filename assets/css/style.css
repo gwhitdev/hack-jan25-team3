@@ -3,14 +3,18 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
 }
 
 main { 
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
+    /* min-height: 90vh; */
+    flex: 1;
+    margin-top: 76px;
+    padding: 1rem;
+    margin: 1.5rem;
 }
 
 header, footer {
@@ -18,9 +22,6 @@ header, footer {
     color: #FEFDF9;
 }
 
-main {
-    flex: 1;
-}
 
 /* Header */
 header {
@@ -58,20 +59,26 @@ header a {
 
 /* Front page image  */
 
-.hero-container {
+.index-body {
     background-image: url('../images/background.webp');
     background-size: cover;
     background-position: center;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-attachment: fixed; 
 }
 
 .hero-container h1 {
     padding: 10px;
     margin: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-container {
+    /* background-color: rgba(128, 128, 128, 0.5); */
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Navigation & toggles - Mobile first  */
@@ -92,6 +99,8 @@ header .logo-container h1 {
 nav {
     position: absolute;
     display: none;
+    right: 0;
+    top: 76px;
     background-color: #FEFDF9;
     color: #1C191F;
     box-shadow: 0 2px 2px #3a3a3a;
@@ -123,15 +132,15 @@ nav {
 #nav-report-button {
     font-weight: bold;
     color: #000000;
-    background-color: rgb(221, 255, 0);
+    background-color: rgb(247, 122, 20);
     padding: 10px 20px;
     border-radius: 12px;
 }
 
 #nav-safety-button {
     font-weight: bold;
-    color: #ff0000;
-    background-color: rgb(221, 255, 0);
+    color: #ff2600;
+    background-color: rgb(255, 249, 239);
     padding: 10px 20px;
     border-radius: 12px;
 }
@@ -246,11 +255,7 @@ legend {
 
 /* HAVEN page */
 .haven-main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 20px;
-    margin: 0 auto;
     max-width: 900px; 
     background-color: #f9f9f9; 
     border-radius: 8px; 
@@ -264,6 +269,9 @@ legend {
 
 .h1-page-header {
     margin-bottom: 15px;
+    padding: 1em;
+    font-size: 2rem;
+    margin: auto;
 }
 
 .haven-context {
@@ -277,13 +285,7 @@ p {
 
 /* Resources page */
 .resources-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px; 
-    min-height: auto;
+    max-width: 800px; 
     background-color: #f9f9f9; 
     border-radius: 8px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -295,13 +297,17 @@ p {
     margin-bottom: 20px;
 }
 
-.h1-page-header {
-    font-size: 2rem;
-    margin: 0;
-}
 
 .resources-content {
     width: 100%; 
+}
+
+.contact-main {
+    max-width: 800px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    
 }
 
 .article {
@@ -354,7 +360,6 @@ a:hover {
 #contact-form {
     min-width: 200px;
     max-width: 320px;
-     
     }
 
 /* Footer */
@@ -400,21 +405,20 @@ body {
     background: radial-gradient(circle, white 50%, #a9a9a9);
 }
 
-.hero-container {
-    background-image: url('../images/background.webp');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.report-button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    &:hover {
+        background-color:  rgb(247, 122, 20);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
 
-.hero-container h1 {
-    padding: 10px;
-    margin: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    &:active {
+        background-color:  rgb(247, 122, 20);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
 }
 
 
@@ -435,6 +439,8 @@ body {
     nav {
         display: block;
         position: absolute;
+        top: auto;
+        right: auto;
         background-color: #1C191F;
         color: #FEFDF9;
         position: relative;
@@ -503,6 +509,10 @@ body {
         position: relative;
         max-width: 800px;
         margin: 20px auto;
+    }
+
+    main {
+        margin-top: 100px;
     }
 
 }
