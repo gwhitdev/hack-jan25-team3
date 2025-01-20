@@ -25,14 +25,12 @@
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <h1 class="logo">Haven</h1>
-            <input type="checkbox" id="nav-mobile-toggle" name="nav-mobile-toggle">
-            <label for="nav-mobile-toggle" class="nav-mobile-toggle">
-                <i class="fa-solid fa-bars" aria-hidden="true"></i>
-            </label>
+        <input type="checkbox" id="nav-mobile-toggle" name="nav-mobile-toggle">
+        <label for="nav-mobile-toggle" class="nav-mobile-toggle">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </label>
 
         <!-- Navbar here -->
         <nav>
@@ -41,7 +39,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#" id="nav-report-button">Report</a>
+                    <a href="#" id="nav-report-button" data-bs-toggle="modal" data-bs-target="#reportModal">Report</a>
                 </li>
                 <li>
                     <a href="haven.html">Haven</a>
@@ -52,23 +50,164 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
-                <li>
-                    <a href="#" id="nav-safety-button">To Safety</a>
+                <li id="safety-notmobile">
+                    <a href="" id="nav-safety-button">To Safety</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <button id="safety-mobile" aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it.">
+        <a href="" id="nav-safety-button-mobile">Quick exit</a>
+        <svg aria-label="An arrow pointing left " width="2rem" height="2rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="rgb(221, 255, 0)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 5L19 12L12 19" stroke="rgb(221, 255, 0)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
 
     <main class="resources-main">
         <div class="resources-page-header">
             <h1 class="h1-page-header">resources</h1>
         </div>
+        <div class="resources-legenda">
+            <ul>
+                <li>
+                    <h6>Recognising the Signs of Human Trafficking</h4>
+                </li>
+                <li>
+                    <h6>Valuable Resources on Human Trafficking in Western Europe</h5>
+                </li>
+            </ul>
+        </div>
         <div class="resources-content">
             <div class="article article-1">
                 <h3 class="article-header">Recognising the Signs of Human Trafficking</h3>
                 <div class="article-content">
-                    XYZ ABC
+                    Human trafficking is a hidden crime that thrives on secrecy and manipulation. Understanding its
+                    signs can empower individuals to identify and report suspicious situations. Here is a simple guide
+                    to recognizing key indicators of human trafficking.
+                    <br>
+                    <h4 class="article-h4">1. Physical and Behavioural Indicators</h4>
+                    <p>Victims of trafficking often exhibit physical and emotional signs of abuse or control:
+                    </p><br>
+                    <ul>
+                        <li>
+                            Unexplained injuries such as bruises, cuts, or burns in various stages of healing suggest
+                            abuse.
+                        </li>
+                        <li>
+                            Poor hygiene or inappropriate clothing for the weather may indicate neglect.
+                        </li>
+                        <li>
+                            Malnutrition or exhaustion can result from overwork or mistreatment.
+                        </li>
+                        <li>
+                            Signs of control, like extreme compliance or fear, may signal that a victim is not allowed
+                            to speak freely or is accompanied by a controlling individual.
+                        </li>
+                        <li>
+                            Frequent relocation or a lack of a fixed address may point to constant movement by
+                            traffickers.
+                        </li>
+                        <li>
+                            Confusion or disorientation can occur if the victim does not know their location or
+                            struggles with the local language.
+                        </li>
+                    </ul>
+                    <br>
+                    <h4 class="article-h4">2. Workplace and Labor Conditions</h4>
+                    <p>Human trafficking often occurs in exploitative work environments:
+                    </p><br>
+                    <ul>
+                        <li>
+                            Restricted movement: Victims may be confined to their workplace, unable to leave.
+                        </li>
+                        <li>
+                            Excessive working hours without proper breaks or rest.
+                        </li>
+                        <li>
+                            Threats and intimidation are commonly used to maintain control.
+                        </li>
+                        <li>
+                            Debts for basic needs: Traffickers often charge victims high fees for food, shelter, or
+                            clothing, leaving them with little or no income.
+                        </li>
+                        <li>
+                            Dangerous or illegal work: Victims may be forced into hazardous jobs or criminal activities.
+                        </li>
+                    </ul>
+                    <br>
+                    <h4 class="article-h4">3. Control by Others</h4>
+                    <p>Traffickers maintain control over victims in several ways:
+                    </p><br>
+                    <ul>
+                        <li>
+                            Speaking on behalf of victims, preventing them from communicating freely.
+                        </li>
+                        <li>
+                            Withholding identification documents such as passports or IDs.
+                        </li>
+                        <li>
+                            Isolating victims from the community to prevent interaction or escape.
+                        </li>
+                        <li>
+                            Monitoring communications, restricting access to phones or the internet.
+                        </li>
+                    </ul>
+                    <br>
+                    <h4 class="article-h4">4. Psychological Signs</h4>
+                    <p>Trauma from trafficking leaves psychological scars:
+                    </p><br>
+                    <ul>
+                        <li>
+                            Fearful or submissive behaviour, especially toward authority figures.
+                        </li>
+                        <li>
+                            Anxiety or depression that seems severe or misplaced.
+                        </li>
+                        <li>
+                            Apathy toward living conditions or a sense of hopelessness.
+                        </li>
+                        <li>
+                            Inconsistent or rehearsed stories when asked about personal history.
+                        </li>
+                    </ul>
+                    <br>
+                    <h4 class="article-h4">5. Children and Minors</h4>
+                    <p>Children are especially vulnerable to trafficking:
+                    </p><br>
+                    <ul>
+                        <li>
+                            Unaccompanied minors in unsafe situations or without guardians.
+                        </li>
+                        <li>
+                            Runaways or abandoned children are often targeted for exploitation.
+                        </li>
+                        <li>
+                            Irregular school attendance or behaviour suggesting restricted access to education.
+                        </li>
+                        <li>
+                            Excessive dependence on a controlling adult who speaks or acts on their behalf.
+                        </li>
+                    </ul>
+                    <br>
+                    <h4 class="article-h4">Key Points to Remember</h4>
+                    <ul><br>
+                        <li>
+                            Victims may not realize they are being trafficked due to manipulation or fear.
+                        </li>
+                        <li>
+                            Traffickers often deceive victims with false promises of jobs, love, or a better life.
+                        </li>
+                        <li>
+                            Trafficking takes many forms, including labour trafficking, sexual exploitation, forced
+                            marriage, and even organ trafficking.
+                        </li>
+                    </ul>
+                    <p>By staying alert to these signs, we can help protect vulnerable individuals and fight human
+                        trafficking. If you suspect someone is a victim, report it to trusted authorities or
+                        organisations dedicated to combating this global crime.</p>
                 </div>
+            <br><br>
             </div>
             <div class="article article-2">
                 <h3 class="article-header">Valuable Resources on Human Trafficking in Western Europe</h3>
@@ -81,14 +220,17 @@
                     <ol>
                         <li>European Union Anti-Trafficking Coordination
                             <ul>
-                                <li>Website: <a href="https://ec.europa.eu/anti-trafficking">ec.europa.eu/anti-trafficking</a> </li>
+                                <li>Website: <a
+                                        href="https://ec.europa.eu/anti-trafficking">ec.europa.eu/anti-trafficking</a>
+                                </li>
                                 <li>Provides policy guidance, reports, and an overview of anti-trafficking
                                     efforts across Europe.</li>
                             </ul>
                         </li>
                         <li>La Strada International
                             <ul>
-                                <li>Website: <a href="https://lastradainternational.org">lastradainternational.org</a> </li>
+                                <li>Website: <a href="https://lastradainternational.org">lastradainternational.org</a>
+                                </li>
                                 <li>A network of European NGOs working to combat trafficking and provide victim support.
                                 </li>
                             </ul>
@@ -110,10 +252,14 @@
                         <h4 class="article-h4">National Hotlines</h4>
                         <ul>
                             <li>Ireland: Blue Blindfold Campaign <br> <span class="bold"> +353 1800 666 111</span></li>
-                            <li>United Kingdom: Modern Slavery Helpline <br> <span class="bold"> +44 08000 121 700</span></li>
-                            <li>France: National Human Trafficking Hotline <br> <span class="bold"> +33 0800 200 777</span></li>
-                            <li>Germany: Advice Centre for Human Trafficking <br> <span class="bold"> +49 30 2639 6736</span></li>
-                            <li>Spain: National Trafficking Helpline <br> <span class="bold"> +34 900 105 090</span></li>
+                            <li>United Kingdom: Modern Slavery Helpline <br> <span class="bold"> +44 08000 121
+                                    700</span></li>
+                            <li>France: National Human Trafficking Hotline <br> <span class="bold"> +33 0800 200
+                                    777</span></li>
+                            <li>Germany: Advice Centre for Human Trafficking <br> <span class="bold"> +49 30 2639
+                                    6736</span></li>
+                            <li>Spain: National Trafficking Helpline <br> <span class="bold"> +34 900 105 090</span>
+                            </li>
                         </ul>
                         <br>
                         <h4 class="article-h4">Charities and Support Networks</h4>
@@ -167,17 +313,75 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Report incident</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post" enctype='multipart/form-data' id="reportForm">
+                            <div id="pageOne" class="page ">
+                                <label for="incidentDescription">Describe what happened</label>
+                                <textarea name="incidentDescription" id="incidentDescription" rows="10"
+                                    cols="40"></textarea>
+                            </div>
+                            <div id="pageTwo" class="page d-none">
+                                <div id="map"></div>
+                            </div>
+                            <div id="pageThree" class="page d-none">
+                                <h6>Information to be submitted:</h6>
+                                <p class="bold">Incident description:</p>
+                                <p id="confirmDescription">confirmation placeholder p</p>
+                                <p class="bold">Location of incident:</p>
+                                <p id="confirmLocation">location placeholder</p>
+                            </div>
+                        </form>
+                        <form action="" method="post" id="reporterForm" class="d-none">
+                            <div id="pageFour" class="page d-none">
+                                <h6>Thank you for submitting your report.</h6>
+                                <p>To receive confirmation from our team regarding your report, please select “Yes” and
+                                    complete the form. If you prefer to remain anonymous and receive no form of
+                                    correspondence, select "No." Thank you.</p>
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">No</button>
+                                <button class="btn btn-success" id="yesBtn">Yes</button>
+                            </div>
+                            <div id="pageFive" class="page d-none">
+                                <label for="firstName">First name</label>
+                                <input type="text" name="firstName" id="firstName">
+                                <label for="lastName">Last name</label>
+                                <input type="text" name="lastName" id="lastName">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                                <label for="phone">Phone</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div id="pageSix" class="page d-none">
+                                <h6>Thank you for letting our team reach out.</h6>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="modalButton">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-        <!-- Footer -->
-        <footer>
-            <ul>
-                <li><a href="haven.html">Haven</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><span style="font-size:10px"><i class="fa-regular fa-copyright"></i>2025 Haven. All rights reserved.</span></li>
-            </ul>
-        </footer>
-  
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="haven.html">Haven</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><span style="font-size:10px"><i class="fa-regular fa-copyright"></i>2025 Haven. All rights
+                    reserved.</span></li>
+        </ul>
+    </footer>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -190,6 +394,13 @@
     <script src="assets/js/script.js"></script>
     <!-- Escape button JS -->
     <script src="assets/js/escape.js"></script>
+    <!-- Map loader -->
+    <script>
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+            key: "AIzaSyCFMCipQD60N3DxlokjcK-ehosH6wa_ss4",
+            v: "weekly",
+        });
+    </script>
 
 </body>
 
