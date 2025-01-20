@@ -525,6 +525,13 @@ These features aim to create a robust support network and ensure that victims ha
 
 ## Lighthouse 
 
+### Desktop
+![Desktop](readmedocs/lighthouse.png)
+
+### Mobile
+![Monile](readmedocs/moblightlight.png)
+
+
 [Back to Table of Contents](#table-of-contents)
 
 ---
