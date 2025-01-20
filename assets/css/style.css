@@ -24,7 +24,6 @@ footer {
   color: #fefdf9;
 }
 
-
 /* Header */
 header {
   display: flex;
@@ -46,6 +45,10 @@ header a {
   letter-spacing: 2px;
   font-size: 110%;
   padding-top: 10px;
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+    margin: 0;
 }
 
 #menu>li {
@@ -150,6 +153,13 @@ nav {
 .nav-mobile-toggle-label {
   font-size: 2rem;
   padding-left: 1rem;
+}
+
+.active {
+    border-bottom: 1px solid;
+    color: #3DA6FF !important; 
+    text-decoration: underline; 
+    font-weight: bold; 
 }
 
 #nav-report-button {
@@ -262,7 +272,7 @@ fieldset {
   border-radius: 8px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Style input fields */
@@ -354,10 +364,9 @@ p {
 }
 
 .resources-page-header {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: center; 
+  margin-bottom: 30px; 
 }
-
 
 .resources-content {
   width: 100%;
@@ -371,7 +380,7 @@ p {
   border-radius: 8px;
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .article-header {
@@ -530,11 +539,30 @@ body {
     display: none;
   }
 
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
   #menu {
     display: flex;
     margin: 5px 0;
     justify-content: end;
   }
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 
   .logo {
     margin: 0;
@@ -547,6 +575,13 @@ body {
     border-color: #fefdf9;
     align-self: center;
   }
+    header li {
+        margin: 0 5px;
+        padding-right: 5px;
+        border-right: 2px solid;
+        border-color: #1C191F;
+        align-self: center;
+    }
 
   .end-li-item {
     border-right: none;
@@ -560,6 +595,8 @@ body {
     padding: 5px 5px;
     font-size: 100%;
   }
+
+  
 
   #contact {
     position: relative;
