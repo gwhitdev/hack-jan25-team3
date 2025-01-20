@@ -16,7 +16,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- What3Words -->
-    <script type="module" defer
+    <script type="module" 
         src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.esm.js"></script>
     <script nomodule defer
         src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.js"></script>
@@ -71,28 +71,12 @@
         </div>
     </header>
 
-    <button id="safety-mobile"
-            alt="Escape to BBC Weather - doesn't hide all your browser history!"
-            aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it.">
-        <a href="" id="nav-safety-button-mobile">Quick exit</a>
+    <button id="safety-mobile" class="btn" aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it." onclick="location.href=''">
+        Quick exit
         <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
     </button>
 
     <main class="haven-main container">
-        <div class="row ">
-            <div class="col-10 offset-1 col-md-6 offset-md-0 mt-2 text-center">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title article-header">Who is haven?</h3>
-                        <p class="card-text haven-context article article-2">
-                            At H.A.V.E.N, our mission is to combat human trafficking through vigilance,
-                            empowerment, and action. We provide a confidential platform for reporting
-                            suspected trafficking activities and offer critical resources to help individuals and
-                            communities identify warning signs. Together, we are building a future free from exploitation.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
             <div class="col-10 offset-1 col-md-6 offset-md-0 mt-2 text-center">
                 <div class="card mb-4">
@@ -114,7 +98,25 @@
             <div class="col-10 offset-1 col-md-6 offset-md-0 mt-2 text-center">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h3 class="card-title article-header">Modal – Do you wish to be contacted?</h3>
+                        <h3 class="card-title article-header">Together, We Can Make a Difference</h3>
+                        <p class="card-text haven-context article article-2">
+                            
+                            No one should face the challenge of human trafficking alone. By educating people and providing a platform for action, we aim to empower everyone with the tools to help those in need. Human trafficking is often closer than we realize, but by learning to recognize the signs, anyone can take meaningful action and avoid feeling helpless in such situations.
+                            Recognizing the Signs
+                            We provide clear indicators to help people identify potential human trafficking. This knowledge equips you to respond effectively and confidently if you encounter a situation that raises concerns.
+                            H.A.V.E.N. collaborates with local authorities and larger organizations dedicated to combating human trafficking. When incidents are reported, we share this information with our partners whenever possible to ensure appropriate action is taken where this is possible.
+                            As H.A.V.E.N. is not part of the local authorities, our primary goal is to flag incidents and provide a comprehensive overview of potential trafficking activities. In emergencies, it is crucial to contact local authorities directly. However, reporting incidents to us, even after the fact, helps build valuable insights into trafficking patterns in specific areas.
+                            By working together, we can create a safer world for everyone.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 mt-2 text-center">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title article-header">Do you wish to be contacted?</h3>
                         <p class="card-text haven-context article article-2">
                             To receive confirmation from our team regarding your report, please select “Yes” 
                             and complete the form below. If you prefer to remain anonymous and receive no 
@@ -140,18 +142,17 @@
                 </div>
             </div>
 
-        </div>
 
         <!-- Modal -->
         <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Report incident</h5>
+                        <h5 class="modal-title" id="reportModalLabel">Report incident</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="post" enctype='multipart/form-data' id="reportForm">
+                        <form method="post" enctype='multipart/form-data' id="reportForm">
                             <div id="pageOne" class="page ">
                                 <label for="incidentDescription" id="descriptionLabel">Describe what happened</label>
                                 <textarea name="incidentDescription" id="incidentDescription" rows="10"
@@ -168,7 +169,7 @@
                                 <p id="confirmLocation">location placeholder</p>
                             </div>
                         </form>
-                        <form action="" method="post" id="reporterForm" class="d-none">
+                        <form method="post" id="reporterForm" class="d-none">
                             <div id="pageFour" class="page d-none">
                                 <h6>Thank you for submitting your report.</h6>
                                 <p>To receive confirmation from our team regarding your report, please select “Yes” and
