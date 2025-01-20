@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/site.webmanifest" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" >
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" >
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" >
+    <link rel="manifest" href="assets/images/site.webmanifest" >
     <title>HAVEN</title>
 
     <!-- Bootstrap CSS -->
     <!-- Bootswatch CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css"
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+        crossorigin="anonymous" >
+    <link rel="stylesheet" href="assets/css/style.css" >
     <!--Fontawesome link-->
     <script src="https://kit.fontawesome.com/685977a0ed.js" crossorigin="anonymous"></script>
 </head>
@@ -64,10 +64,8 @@
             </div>
         </div>
     </header>
-    <button id="safety-mobile"
-            alt="Escape to BBC Weather - doesn't hide all your browser history!"
-        aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it.">
-        <a href="" id="nav-safety-button-mobile">Quick exit</a>
+    <button id="safety-mobile" class="btn" aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it." onclick="location.href=''">
+        Quick exit
         <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
     </button>
 
@@ -117,7 +115,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Report incident</h5>
+                    <h5 class="modal-title" id="reportModalLabel">Report incident</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -154,13 +152,13 @@
                         </div>
                         <div id="pageFive" class="page d-none">
                             <label for="firstName">First name</label>
-                            <input type="text" name="firstName" id="firstName" />
+                            <input type="text" name="firstName" id="firstName" >
                             <label for="lastName">Last name</label>
-                            <input type="text" name="lastName" id="lastName" />
+                            <input type="text" name="lastName" id="lastName" >
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
+                            <input type="email" name="email" id="email" >
                             <label for="phone">Phone</label>
-                            <input type="tel" name="phone" id="phone" />
+                            <input type="tel" name="phone" id="phone" >
                         </div>
                         <div id="pageSix" class="page d-none">
                             <h6>Thank you for letting our team reach out.</h6>
