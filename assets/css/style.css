@@ -52,12 +52,11 @@ header a {
   margin-bottom: 0.5em;
   list-style-type: none;
   text-align: right;
-  text-decoration: none;
+  
 }
 
 #menu > li > a:hover {
   color: rgb(247, 122, 20);
-  text-decoration: none;
 }
 
 .logo {
@@ -132,8 +131,8 @@ nav {
     margin-right: 0;
 }
 
-nav .active {
-  text-decoration: underline;
+#menu .active a {
+  text-decoration: underline !important;
   text-decoration-color: #1C191F;
 }
 
@@ -162,18 +161,35 @@ nav .active {
     }
 }
 
-#nav-safety-button {
-    font-weight: bold;
-    color: #ff2600;
-    background-color: rgb(255, 249, 239);
-    padding: 10px 20px;
-    border-radius: 12px;
+#safety-notmobile {
+    display: none;
 }
-
 #safety-mobile {
-  font-size: 1.2em;
+    background-color:rgba(28,25,31,0.8);
+    border-radius: 100%;
+    border: 5px solid rgba(0,0,0,0.5);
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 50px black;
+    z-index: 100;
 }
+#safety-mobile a {
+    color: white;
 
+    font-weight: bold;
+}
+.fa-person-walking-dashed-line-arrow-right {
+    color: rgb(221, 255, 0);
+    font-size: 2rem;
+    padding-top: 0.25rem;
+}
 .info-card {
     display: flex;
     flex-direction: column;
@@ -189,8 +205,17 @@ nav .active {
 
 /* Map */
 #map {
-  height: 300px;
-  width: 450px;
+  max-height: 300px;
+  max-width: 450px;
+}
+
+#map-location-button {
+  margin-top: 10px;
+  margin-left: 120px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #000000;
+  font-size: 15px;
 }
 
 /* Page 3 report form */
@@ -569,11 +594,26 @@ body {
     font-size: 100%;
   }
 
-  #safety-notmobile {
-    display: inherit;
-  }
+    #safety-mobile {
+      display: none;
+    }
 
+<<<<<<< HEAD
   main {
+=======
+    #safety-notmobile {
+        display: block;
+    }
+
+    #nav-safety-button {
+        font-weight: bold;
+        color: #ff2600;
+        background-color: rgb(221, 255, 0);
+        padding: 10px 20px;
+        border-radius: 12px;
+    }
+    main {
+>>>>>>> main
         margin-top: 100px;
     }
 
@@ -587,7 +627,34 @@ body {
   fieldset {
     width: 90%; /* Adjust for smaller screens */
   }
+
 }
 
 @media screen and (min-width: 376px) {
+  /* Report form */
+  #descriptionLabel {
+    width: 100%;
+    margin-left: 7px;
+    max-width: 450px;
+  }
+
+  #incidentDescription {
+    margin-left: 7px;
+  }
+
+
+  /* Map */
+  #map {
+    max-height: 260px;
+    max-width: 450px;
+  }
+
+  #map-location-button {
+    margin-top: 10px;
+    margin-left: 131px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #000000;
+    font-size: 12px;
+  }
 }

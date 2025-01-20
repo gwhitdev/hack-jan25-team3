@@ -36,8 +36,8 @@
                     <input type="checkbox" id="nav-mobile-toggle" name="nav-mobile-toggle">
                     <nav>
                         <ul id="menu">
-                            <li>
-                                <a href="index.html" class="active">Home</a>
+                            <li class="active">
+                                <a href="index.html" >Home</a>
                             </li>
                             <li>
                                 <a href="#" id="nav-report-button" data-bs-toggle="modal"
@@ -49,8 +49,11 @@
                             <li>
                                 <a href="resources.html">Resources</a>
                             </li>
-                            <li class="end-li-item">
-                                <a href="contact.html" >Contact</a>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li class="end-li-item" id="safety-notmobile">
+                                <a href="#" id="nav-safety-button">To Safety</a>
                             </li>
                         </ul>
                     </nav>
@@ -60,13 +63,14 @@
                 </div>
             </div>
         </div>
-    
-    <button id="safety-mobile" class="btn btn-outline-danger"
+    </header>
+    <button id="safety-mobile"
+            alt="Escape to BBC Weather - doesn't hide all your browser history!"
         aria-label="Click this button to quickly load BBC Weather - it is a quick escape in case you need it.">
-        <a href="" id="nav-safety-button-mobile"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i></a>
+        <a href="" id="nav-safety-button-mobile">Quick exit</a>
+        <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
     </button>
 
-</header>
     <main class="container">
         <!-- hero image & call to action -->
         <div class="row d-flex justify-content-center align-items-center">
@@ -119,7 +123,7 @@
                 <div class="modal-body">
                     <form action="" method="post" enctype="multipart/form-data" id="reportForm">
                         <div id="pageOne" class="page">
-                            <label for="incidentDescription">Describe what happened</label>
+                            <label for="incidentDescription" id="descriptionLabel">Describe what happened</label>
                             <textarea name="incidentDescription" id="incidentDescription" rows="10"
                                 cols="40"></textarea>
                         </div>
