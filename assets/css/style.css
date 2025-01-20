@@ -126,8 +126,8 @@ nav {
   display: none;
   right: 0;
   top: 76px;
-  background-color: #FEFDF9;
-  color: #1C191F;
+  background-color: #1C191F;
+  color: #ffffff;
   box-shadow: 0 2px 2px #3a3a3a;
   list-style-type: none;
   padding-right: 10px;
@@ -430,6 +430,9 @@ a:hover {
   max-width: 320px;
 }
 
+#free-text {
+  max-width: 100%;
+}
 
 .resource-image {
   max-width: 80vw;
@@ -552,9 +555,6 @@ body {
     margin: 5px 0;
     justify-content: end;
   }
-    #menu {
-        display: flex;
-    }
 
     #menu>li {
         padding-left: 1rem;
