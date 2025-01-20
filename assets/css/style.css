@@ -23,7 +23,6 @@ footer {
   color: #fefdf9;
 }
 
-
 /* Header */
 header {
     display: flex;
@@ -248,7 +247,7 @@ fieldset {
   border-radius: 8px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Style input fields */
@@ -306,7 +305,7 @@ legend {
     max-width: 900px; 
     background-color: #f9f9f9; 
     border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
 }
 
 .haven-page-header {
@@ -335,7 +334,7 @@ p {
     max-width: 800px; 
     background-color: #f9f9f9; 
     border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
     
 }
 
@@ -353,7 +352,7 @@ p {
     max-width: 800px; 
     background-color: #f9f9f9; 
     border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
     
 }
 
@@ -363,7 +362,7 @@ p {
   border-radius: 8px;
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .article-header {
