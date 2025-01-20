@@ -252,7 +252,8 @@ async function initMap() {
   if (marker) {
     google.maps.event.clearListeners(marker, "dragend");
   }
-
+  
+  incidentLocation = initPosition;
   marker.addListener("dragend", (e) => {
     incidentLocation = { lat: e.latLng.lat(), lng: e.latLng.lng() };
   });
@@ -261,9 +262,10 @@ async function initMap() {
   infoWindow = new google.maps.InfoWindow();
   const locationButton = document.createElement("button");
 
-  locationButton.textContent = "Pan to Current Location";
-  locationButton.classList.add("custom-map-control-button");
+  locationButton.textContent = "Take me to my location";
+  locationButton.id = 'map-location-button';
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+
   locationButton.addEventListener("click", (e) => {
     e.preventDefault();
     // Try HTML5 geolocation.
