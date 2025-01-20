@@ -16,7 +16,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- What3Words -->
-    <script type="module" defer
+    <script type="module" 
         src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.esm.js"></script>
     <script nomodule defer
         src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.js"></script>
@@ -84,10 +84,10 @@
         <div class="resources-legenda">
             <ul>
                 <li>
-                    <h6>Recognising the Signs of Human Trafficking</h4>
+                    <h6>Recognising the Signs of Human Trafficking</h6>
                 </li>
                 <li>
-                    <h6>Valuable Resources on Human Trafficking in Western Europe</h5>
+                    <h6>Valuable Resources on Human Trafficking in Western Europe</h6>
                 </li>
             </ul>
         </div>
@@ -213,7 +213,7 @@
                     </ul>
                     <br>
                     <h4 class="article-h4">Key Points to Remember</h4>
-                    <ul><br>
+                    <ul>
                         <li>
                             Victims may not realize they are being trafficked due to manipulation or fear.
                         </li>
@@ -270,9 +270,9 @@
                                 <li>Hotline: Varies by country; see website for local contacts.</li>
                             </ul>
                         </li>
-                        <br>
-                        <h4 class="article-h4">National Hotlines</h4>
-                        <ul>
+                        
+                        <li><h4 class="article-h4">National Hotlines</h4></li>
+                        <li><ul>
                             <li>Ireland: Blue Blindfold Campaign <br> <span class="bold"> +353 1800 666 111</span></li>
                             <li>United Kingdom: Modern Slavery Helpline <br> <span class="bold"> +44 08000 121
                                     700</span></li>
@@ -282,9 +282,9 @@
                                     6736</span></li>
                             <li>Spain: National Trafficking Helpline <br> <span class="bold"> +34 900 105 090</span>
                             </li>
-                        </ul>
-                        <br>
-                        <h4 class="article-h4">Charities and Support Networks</h4>
+                        </ul></li>
+                        
+                        <li><h4 class="article-h4">Charities and Support Networks</h4></li>
                         <li> Hope for Justice (UK and Europe)
                             <ul>
                                 <li>Website: <a href="https://hopeforjustice.org">hopeforjustice.org</a> </li>
@@ -304,9 +304,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <br>
-                        <h4 class="article-h4">Educational Resources</h4>
-                        <ul>
+                        
+                        <li><h4 class="article-h4">Educational Resources</h4></li>
+                        <li><ul>
                             <li>European Crime Prevention Network (EUCPN)
                                 <ul>
                                     <li>Website: <a href="https://eucpn.org">eucpn.org</a> </li>
@@ -320,8 +320,8 @@
                                     </li>
                                 </ul>
                             </li>
-                        </ul>
-                        <br>
+                        </ul></li>
+                    </ol>   
                         <p>By utilising these resources, you can learn more about human trafficking, recognize its
                             signs, and find avenues to report suspicious activities or support victims. Every action
                             helps to combat this pervasive crime.</p>
@@ -331,7 +331,7 @@
                                 href="contact.html">Contact Us</a> section.
                             Whether you need help, or are looking for more information, we are here to listen and
                             provide assistance.</p>
-                    </ol>
+                    
                 </div>
             </div>
         </div>
@@ -340,11 +340,11 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Report incident</h5>
+                        <h5 class="modal-title" id="reportModalLabel">Report incident</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="post" enctype='multipart/form-data' id="reportForm">
+                        <form method="post" enctype='multipart/form-data' id="reportForm">
                             <div id="pageOne" class="page ">
                                 <label for="incidentDescription" id="descriptionLabel">Describe what happened</label>
                                 <textarea name="incidentDescription" id="incidentDescription" rows="10"
@@ -361,7 +361,7 @@
                                 <p id="confirmLocation">location placeholder</p>
                             </div>
                         </form>
-                        <form action="" method="post" id="reporterForm" class="d-none">
+                        <form method="post" id="reporterForm" class="d-none">
                             <div id="pageFour" class="page d-none">
                                 <h6>Thank you for submitting your report.</h6>
                                 <p>To receive confirmation from our team regarding your report, please select “Yes” and
