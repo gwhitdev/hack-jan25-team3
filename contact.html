@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/images/apple-touch-icon.png"
-    />
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="assets/images/favicon-32x32.png"
-    />
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/images/site.webmanifest" />
+    >
+    <link rel="manifest" href="assets/images/site.webmanifest" >
     <title>HAVEN</title>
 
     <!-- Bootstrap CSS -->
@@ -29,12 +29,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css"
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    >
+    <link rel="stylesheet" href="assets/css/style.css" >
     <!-- What3Words -->
     <script
       type="module"
-      defer
       src="https://cdn.what3words.com/javascript-components@4.8.0/dist/what3words/what3words.esm.js"
     ></script>
     <script
@@ -143,7 +142,7 @@
                                 <div>
                                     <input type="radio" id="information" value="information" class="contact-type"
                                         name="contact-type">
-                                    <label for="Information">General information</label>
+                                    <label for="information">General information</label>
                                 </div>
                                 <div>
                                     <input type="radio" id="collaborate" value="collaborate" class="contact-type"
@@ -173,11 +172,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Report incident</h5>
+                    <h5 class="modal-title" id="reportModalLabel">Report incident</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="post" enctype="multipart/form-data" id="reportForm">
+                    <form method="post" enctype="multipart/form-data" id="reportForm">
                         <div id="pageOne" class="page">
                             <label for="incidentDescription" id="descriptionLabel">Describe what happened</label>
                             <textarea name="incidentDescription" id="incidentDescription" rows="10"
@@ -194,7 +193,7 @@
                             <p id="confirmLocation">location placeholder</p>
                         </div>
                     </form>
-                    <form action="" method="post" id="reporterForm" class="d-none">
+                    <form method="post" id="reporterForm" class="d-none">
                         <div id="pageFour" class="page d-none">
                             <h6>Thank you for submitting your report.</h6>
                             <p>
@@ -210,13 +209,13 @@
                         </div>
                         <div id="pageFive" class="page d-none">
                             <label for="firstName">First name</label>
-                            <input type="text" name="firstName" id="firstName" />
+                            <input type="text" name="firstName" id="firstName" >
                             <label for="lastName">Last name</label>
-                            <input type="text" name="lastName" id="lastName" />
+                            <input type="text" name="lastName" id="lastName" >
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
+                            <input type="email" name="email" id="email" >
                             <label for="phone">Phone</label>
-                            <input type="tel" name="phone" id="phone" />
+                            <input type="tel" name="phone" id="phone" >
                         </div>
                         <div id="pageSix" class="page d-none">
                             <h6>Thank you for letting our team reach out.</h6>
