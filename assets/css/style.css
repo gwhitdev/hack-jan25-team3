@@ -430,6 +430,11 @@ a:hover {
   max-width: 320px;
 }
 
+
+.resource-image {
+  max-width: 80vw;
+}
+
 /* Footer */
 
 /* Map */
