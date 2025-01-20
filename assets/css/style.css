@@ -60,6 +60,10 @@ header a {
   margin: 0;
 }
 
+#hamburger-icon:hover {
+    cursor: pointer;
+}
+
 /* Front page image  */
 
 .hero-container {
