@@ -120,11 +120,20 @@ function saveReportFormInputs(){
  * Clear the modal when it is closed and reset open page to pageOne
  */
 function clearModal(){
+    // Clear the form inputs
     descriptionInput.value = "";
     reportId = "";
     incidentLocation = {};
+
+    // Reset the forms to reportForm
     reportForm.classList.remove('d-none');
     reporterForm.classList.add('d-none');
+    
+    //Reset the modal button
+    modalButton.textContent = "Continue";
+    modalButton.removeAttribute('disabled');
+    
+    // Reset the pages to first page
     const pages = Array.from(formModal.querySelectorAll('.page'));
     pages.forEach(page => {
         page.classList.add('d-none');
@@ -133,6 +142,7 @@ function clearModal(){
         }
     }});
 }
+
 
 // Eventlistener for when the modal is hidden
 formModal.addEventListener('hidden.bs.modal', clearModal); 
@@ -188,26 +198,6 @@ async function submitReporterForm(){
 }
 
 
-/**
- * See all reports from api
- * not used as of now
- */
-async function seeReports(){
-    try{
-        const data = await fetch(`${databaseURL}/all-results`, {
-            method: 'GET'
-        });
-        if (!data.ok) {
-            throw new Error('Network response was not ok');
-        }
-        console.log("data: ", data);
-        
-    }catch(e){
-        console.log(e)
-    }
-}
-
-
 // Event listeners for the Yes and No buttons
 if (yesButton) {
     yesButton.addEventListener('click', function(e){
@@ -224,7 +214,7 @@ if (noButton) {
 }
 
 
-// Initialize and add the map
+// Add the map to the modal
 let map, infoWindow;
 
 async function initMap() {
