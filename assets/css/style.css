@@ -138,14 +138,11 @@ nav {
     border-radius: 12px;
 }
 
-#nav-safety-button {
-    font-weight: bold;
-    color: #ff2600;
-    background-color: rgb(255, 249, 239);
-    padding: 10px 20px;
-    border-radius: 12px;
-}
 
+
+#safety-notmobile {
+    display: none;
+}
 #safety-mobile {
     background-color:rgba(28,25,31,0.8);
     border-radius: 100%;
@@ -562,13 +559,21 @@ body {
     font-size: 100%;
   }
 
-  #safety-mobile {
-      background-color: brgba(;
-  }
-  #safety-notmobile {
-    display: inherit;
-  }
+    #safety-mobile {
+      display: none;
+    }
 
+    #safety-notmobile {
+        display: block;
+    }
+
+    #nav-safety-button {
+        font-weight: bold;
+        color: #ff2600;
+        background-color: rgb(221, 255, 0);
+        padding: 10px 20px;
+        border-radius: 12px;
+    }
     main {
         margin-top: 100px;
     }
