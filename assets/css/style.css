@@ -12,9 +12,10 @@ html, body {
 main { 
     /* min-height: 90vh; */
     flex: 1;
+    margin: 1.5rem;
     margin-top: 76px;
     padding: 1rem;
-    margin: 1.5rem;
+
 }
 
 header,
@@ -51,11 +52,26 @@ header a {
   margin-bottom: 0.5em;
   list-style-type: none;
   text-align: right;
+  text-decoration: none;
+}
+
+#menu > li > a:hover {
+  color: rgb(247, 122, 20);
+  text-decoration: none;
 }
 
 .logo {
   color: #fefdf9;
   margin: 0;
+  text-align: center;
+}
+
+.logo-container {
+  background-image: url('../images/faviconhackathon_1.webp');
+  background-size: cover;
+  background-position: center;
+  width: 45px;
+  height: 45px;
 }
 
 #hamburger-icon:hover {
@@ -116,6 +132,11 @@ nav {
     margin-right: 0;
 }
 
+nav .active {
+  text-decoration: underline;
+  text-decoration-color: #1C191F;
+}
+
 #nav-mobile-toggle:checked ~ nav {
   display: block;
 }
@@ -136,6 +157,9 @@ nav {
     background-color: rgb(247, 122, 20);
     padding: 10px 20px;
     border-radius: 12px;
+    &:hover {
+      background-color: white
+    }
 }
 
 #nav-safety-button {
@@ -144,6 +168,10 @@ nav {
     background-color: rgb(255, 249, 239);
     padding: 10px 20px;
     border-radius: 12px;
+}
+
+#safety-mobile {
+  font-size: 1.2em;
 }
 
 .info-card {
@@ -156,7 +184,7 @@ nav {
     border-radius: 10px;
     background-color: #FEFDF9;
     box-shadow: 0 2px 2px #3a3a3a;
-    max-width: 60vw;
+    max-width: 90vw;
 }
 
 /* Map */
@@ -499,6 +527,10 @@ body {
     align-self: center;
   }
 
+.end-li-item {
+    border-right: none;
+  }
+
   .burger-container {
     display: none;
   }
@@ -541,9 +573,13 @@ body {
     display: inherit;
   }
 
-    main {
+  main {
         margin-top: 100px;
     }
+
+    .info-card {
+      max-width: 60vw;
+  }
 
 }
 
